@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atrakcje Powiatu Pabianickiego</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="/img/laka.jpeg" alt="background" />
+      <div class="overlay"></div>
+      <div class="menu">
+        <div class="left">
+          <div class="logo">
+            <span>Powiat Pabianicki</span>
+          </div>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li><a href="oferta.html">oferta turystyczna</a></li>
+            <li><a href="mapa.html">mapa administracyjna</a></li>
+            <li><a href="#">szlaki turystyczne</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard-box">
+        <div><span id="typed"></span></div>
+
+        <a href="oferta.html">Odkryj Teraz</a>
+      </div>
+    </div>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Atrakcje turystyczne Powiatu Pabianickiego"],
+        typeSpeed: 60,
+        loop: true,
+        backSpeed: 40,
+        backDelay: 3000,
+      })
+    </script>
+  </body>
+</html>

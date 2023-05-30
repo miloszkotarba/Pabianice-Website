@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container img {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+}
+.container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 20;
+  backdrop-filter: blur(12px);
+}
+
+.container .menu {
+  z-index: 100;
+  width: 100%;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.menu .left .logo {
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 3px rgb(62, 80, 182);
+}
+
+.menu .right ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu .right ul li {
+  padding: 0 0.6rem;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  position: relative;
+}
+
+.menu .right ul li:hover a {
+  text-shadow: 1px 1px 3px rgb(17, 25, 68);
+}
+
+.menu .right ul li a {
+  color: rgba(256, 256, 256, 1);
+  text-decoration: none;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 3px #446a9c;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+}
+
+.dashboard-box {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dashboard-box span {
+  color: #fff;
+  text-shadow: 1px 1px 3px #113b71;
+  font-size: 3.1rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.dashboard-box a {
+  margin-top: 0.6rem;
+  background: rgb(37, 58, 173);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.8rem 4.5rem;
+  border-radius: 8px;
+  letter-spacing: 0.6px;
+}
