@@ -2,7 +2,6 @@
 This project showcases attractions in Pabianice County as part of the "Graphics in Web Pages" course. It is also designed to practice my HTML and CSS skills.
 
 
-
 ## 🔗 Demo
 
 
